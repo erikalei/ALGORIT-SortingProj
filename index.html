@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Battle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bubble Sort Battle</h1>
+
+    <div class="game-container">
+        <div class="player">
+            <h2>Player 1</h2>
+            <div id="arrayContainer1" class="container"></div>
+            <button onclick="giveHint(1)">Hint</button>
+        </div>
+        <div class="player">
+            <h2>Player 2 (Bot)</h2>
+            <div id="arrayContainer2" class="container"></div>
+            <button onclick="giveHint(2)">Hint</button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="shuffleArray()">Shuffle</button>
+        <button onclick="generateArray()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
