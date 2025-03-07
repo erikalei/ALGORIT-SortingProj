@@ -1,25 +1,12 @@
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 300px;
-    width: 100%;
-    margin-top: 20px;
-    padding: 0 10px;
-    border: 2px solid black;
+/* General Styles */
+body {
+    background-color: rgb(11, 43, 53);
+    color: white; /* Light text for modern look */
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.bar {
-    width: 30px;
-    background-color: blue;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-
-.bar:hover {
-    background-color: yellow;
-}
-
+/* Game Container */
 .game-container {
     display: flex;
     justify-content: space-around;
@@ -30,6 +17,53 @@
     text-align: center;
 }
 
+/* Sorting Containers */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 300px; /* Fixed height */
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: 2px solid rgba(217, 215, 215, 0.092);
+    overflow: hidden; /* Prevent bars from overflowing */
+    background-color: rgba(253, 253, 253, 0.1);
+}
+
+/* Sorting Bars */
+.bar {
+    width: 30px;
+    background-color: rgb(195, 182, 238);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    max-height: 100%; /* Ensure bars stay inside container */
+}
+
+.bar:hover {
+    background-color: yellow;
+}
+
+/* Modern Buttons */
+.modern-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modern-btn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+/* Controls */
 .controls {
     text-align: center;
     margin-top: 20px;
